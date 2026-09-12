@@ -1,0 +1,52 @@
+site_name: Валерий Половинкин
+site_description: Учебное портфолио экономического аналитика
+site_author: Половинкин Валерий Валерьевич
+
+theme:
+  name: material
+  language: ru
+  font: false
+  logo: images/logo.svg
+  favicon: images/logo.svg
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.share
+
+nav:
+  - Главная: index.md
+  - О себе: about.md
+  - Проекты: projects.md
+  - Контакты: contacts.md
+
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - tables
+  - admonition
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Made-in-TYO
+      name: GitHub Валерия Половинкина
+
+copyright: © 2026 Валерий Половинкин · Учебный проект по веб-технологиям
