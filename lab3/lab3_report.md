@@ -5,7 +5,7 @@
 University: [ITMO University](https://itmo.ru/ru/)  
 Faculty: [FICT](https://fict.itmo.ru)  
 Course: [Введение в веб технологии](https://itmo-ict-faculty.github.io/introduction-in-web-tech/)  
-Year: 2025/2026  
+Year: 2026/2027  
 Group: U4225  
 Author: Половинкин Валерий Валерьевич  
 Lab: Lab3  
