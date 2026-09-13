@@ -1,6 +1,8 @@
 site_name: Валерий Половинкин
 site_description: Учебное портфолио экономического аналитика
 site_author: Половинкин Валерий Валерьевич
+site_url: https://made-in-tyo.github.io/devops-lab-polovinkin/
+use_directory_urls: true
 
 theme:
   name: material
@@ -16,6 +18,7 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.footer
     - search.highlight
     - search.share
 

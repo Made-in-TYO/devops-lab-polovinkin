@@ -1,24 +1,58 @@
 # Курсовая работа: персональный сайт
 
-Учебный сайт Валерия Половинкина на MkDocs с темой Material. Содержимое
-представляет демонстрационное портфолио экономического аналитика.
+[Открыть опубликованный сайт](https://made-in-tyo.github.io/devops-lab-polovinkin/) · [Отчёт](report/coursework.md) · [Конфигурация MkDocs](mkdocs.yml) · [Исходники страниц](docs/)
 
-## Запуск в Windows PowerShell
+Персональный учебный сайт Валерия Половинкина на MkDocs Material. Сайт содержит
+ровно четыре раздела из задания: «Главная», «О себе», «Проекты» и «Контакты».
+Профессиональная роль и экономические кейсы являются демонстрационными и не
+описывают реальные достижения автора.
+
+## Что реализовано
+
+- четыре страницы и единая навигация;
+- заголовки, списки, ссылки, изображение, цитата, таблица и карточки;
+- локальные фото и SVG-логотип;
+- русскоязычный поиск;
+- индивидуальная адаптивная цветовая схема;
+- автоматическая публикация на GitHub Pages.
+
+## Запуск в Windows Git Bash
 
 Из папки `coursework` выполните:
 
-```powershell
+```bash
 py -m venv .venv
-.venv\Scripts\python -m pip install -r requirements.txt
-.venv\Scripts\python -m mkdocs serve
+.venv/Scripts/python.exe -m pip install -r requirements.txt
+.venv/Scripts/python.exe -m mkdocs serve
 ```
 
-После запуска сайт доступен по адресу <http://127.0.0.1:8000/>.
+После запуска откройте <http://127.0.0.1:8000/>. Для остановки сервера нажмите
+`Ctrl+C`.
 
 ## Сборка
 
-```powershell
-.venv\Scripts\python -m mkdocs build --strict
+```bash
+.venv/Scripts/python.exe -m mkdocs build --strict
 ```
 
-Готовые статические файлы создаются в папке `site`.
+Готовые статические файлы создаются в служебной папке `site/`. Она не хранится
+в репозитории, потому что при публикации GitHub Actions собирает её заново из
+исходников.
+
+## Структура
+
+- `mkdocs.yml` — метаданные, тема, навигация, поиск и адрес сайта;
+- `docs/*.md` — четыре страницы сайта;
+- `docs/images/` — портрет и логотип;
+- `docs/stylesheets/extra.css` — индивидуальное оформление;
+- `requirements.txt` — закреплённые версии зависимостей;
+- `report/coursework.md` — отчёт по курсовой работе;
+- `report/verification.txt` — протокол итоговой проверки;
+- `report/screenshots/` — скриншоты готового сайта.
+
+## Публикация
+
+Workflow [coursework-pages.yml](../.github/workflows/coursework-pages.yml)
+собирает проект в строгом режиме и публикует результат на GitHub Pages после
+изменений курсовой в ветке `main`. В настройках репозитория источником Pages
+должен быть выбран **GitHub Actions**.

@@ -1,0 +1,54 @@
+Проверка курсовой работы: 13.09.2026
+Автор: Половинкин Валерий Валерьевич
+Окружение автора: Windows 11, Python 3.13.0
+Зависимости: MkDocs 1.6.1, Material for MkDocs 9.7.7
+
+Сборка:
+PASS  python -m mkdocs build --strict
+PASS  Созданы 4 содержательные HTML-страницы и страница 404
+INFO  Material показывает общее уведомление о будущем MkDocs 2.0
+INFO  Уведомление не является ошибкой; код завершения сборки равен 0
+
+Локальные ссылки и ресурсы:
+PASS  Проверено локальных ссылок, ресурсов и якорей: 127
+PASS  Ошибок: 0
+
+HTTP-проверка локальной статической сборки:
+200   /
+200   /about/
+200   /projects/
+200   /contacts/
+200   /search/search_index.json
+200   /images/portrait.png
+200   /images/logo.svg
+200   /stylesheets/extra.css
+
+Поиск:
+PASS  search/search_index.json создан
+INFO  Записей в поисковом индексе: 15
+PASS  Запрос «кофейн» находит 1 результат
+INFO  Результат: «Финансовая модель кофейни»
+
+Проверка интерфейса в браузере:
+PASS  Главная: заголовок и оформление отображаются
+PASS  О себе: заголовок и таблица отображаются
+PASS  Проекты: заголовок и карточки отображаются
+PASS  Контакты: заголовок и карточки отображаются
+PASS  Поиск «кофейни»: показано 1 совпадение
+PASS  Мобильный вид 390 x 844: горизонтальной прокрутки нет
+PASS  Мобильная навигация открывается
+
+Внешние ссылки:
+200   https://github.com/Made-in-TYO
+200   https://github.com/Made-in-TYO/devops-lab-polovinkin
+200   https://github.com/Made-in-TYO/devops-lab-polovinkin/issues
+200   https://www.mkdocs.org/
+200   https://squidfunk.github.io/mkdocs-material/
+200   https://www.markdownguide.org/
+
+GitHub Pages:
+PASS  В mkdocs.yml указан ожидаемый адрес публикации
+PASS  Добавлен workflow .github/workflows/coursework-pages.yml
+INFO  Публичный адрес: https://made-in-tyo.github.io/devops-lab-polovinkin/
+PASS  Сохранены 5 чистых снимков настольной версии (1440 x 960)
+PASS  Сохранён снимок мобильной навигации (390 x 844)
