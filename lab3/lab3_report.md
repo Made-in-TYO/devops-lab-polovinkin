@@ -182,7 +182,10 @@ node_memory_MemAvailable_bytes
 node_filesystem_avail_bytes
 ```
 
-Итоговый дашборд содержит три панели: `CPU`, `Memory` и `Disk`.
+Итоговый дашборд содержит три панели: график загрузки процессора по метрике
+`node_cpu_seconds_total`, график доступной оперативной памяти по метрике
+`node_memory_MemAvailable_bytes` и панель `Disk` с метрикой
+`node_filesystem_avail_bytes`.
 
 ![Итоговый дашборд](images/07_grafana_dashboard.png)
 
