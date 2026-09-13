@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Монограмма Валерия Половинкина</title>
+  <rect width="128" height="128" rx="24" fill="#cbd9cb"/>
+  <path d="M32 30h12l20 48 20-48h12L69 98H58L32 30Z" fill="#153c32"/>
+  <path d="M91 31v67" stroke="#c47345" stroke-width="7"/>
+</svg>
