@@ -167,6 +167,12 @@ body {
   border-color: #e4ece2;
 }
 
+.md-typeset .md-button svg {
+  position: relative;
+  top: -0.05em;
+  vertical-align: middle;
+}
+
 .md-typeset > .md-button,
 .md-typeset .project-list + blockquote + .md-button {
   color: var(--forest);

@@ -22,3 +22,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# MkDocs coursework build artifacts
+coursework/.venv/
+coursework/site/
+coursework/__pycache__/
